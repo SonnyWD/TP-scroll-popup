@@ -21,8 +21,10 @@ const popup = document.querySelector("#popup")
 
 //  événement au click pour faire disparaitre la popup 
 
- popup.addEventListener('click', () => {
-    popup.style.display = "none";
+ closeBtn.addEventListener('click', () => {
+    popup.style.opacity = 0;
+    popup.style.transform = "translateX (500px)";
+
  })
 
 // Créer un événement au scroll
